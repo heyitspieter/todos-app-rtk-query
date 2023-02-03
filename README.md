@@ -16,8 +16,8 @@ You may also see any lint errors in the console.
 
 ## Other Dependencies
 
-This project uses JSON server to perform crud operations.\
+This project uses JSON server to perform crud operations.
 
 To install:
 
-## `npm install json-server`
+## `npm install json-server -g`

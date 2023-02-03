@@ -1,0 +1,89 @@
+.todo-item {
+  gap: 0.5rem;
+  display: flex;
+  border-radius: 0.3rem;
+}
+
+.todo-item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.todo-item__text {
+  flex: 1;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  padding: 1rem 0.8rem;
+  border-radius: 0.3rem;
+  background-color: #645cbb;
+  transition: all 0.28s ease-out;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
+}
+
+.todo-item__text::before {
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  right: 0.8rem;
+  height: 0.18rem;
+  position: absolute;
+  border-radius: 0.3rem;
+  background-color: #ffffff;
+}
+
+.todo-item__text p {
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 1.15rem;
+}
+
+.todo-item__text:hover {
+  margin-left: 1.5rem;
+}
+
+.todo-item__btn {
+  border: 0;
+  color: #ffffff;
+  cursor: pointer;
+  background: none;
+  font-size: 1.1rem;
+  padding: 0 0.8rem;
+  border-radius: 0.3rem;
+  font-family: system-ui;
+  background-color: #ffffff;
+  transition: transform 0.25s ease;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
+}
+
+.todo-item__btn svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #645cbb;
+  transition: fill 0.25s ease;
+}
+
+.todo-item__btn:hover {
+  transform: scale(1.04);
+}
+
+.todo-item__btn:hover svg {
+  fill: hsl(0, 72%, 48%);
+}
+
+.done p {
+  text-decoration: line-through;
+}
+
+.sk-text {
+  padding: 1rem 0.8rem;
+}
+
+.sk-del-btn {
+  display: flex;
+}
+
+.sk-del-btn span {
+  align-self: stretch;
+  padding: 0 1.4rem;
+}
